@@ -1,6 +1,10 @@
+
+<!-- HTML HERO COMPONENT -->
+
 <h1>Héroes <small>Marvel y DC</small></h1>
 <hr>
 
+<!-- Cards columns boostrap -->
 <div class="card-columns">
   <div class="card animated fadeIn fast" *ngFor="let heroe of heroes;let i = index;">
    <img [src]= "heroe.img" class="card-img-top" [alt]="heroe.nombre">
@@ -11,6 +15,7 @@
    </div>
 
    <button (click)="verHeroe(i)" class="btn btn-outline-primary btn-block">Ver más...</button>
+   <!-- A href version -->
    <!-- <a [routerLink]="['/heroe',i]" class="btn btn-outline-primary">Ver más Link...</a> -->
   </div>
 </div>
